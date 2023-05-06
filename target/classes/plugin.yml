@@ -1,0 +1,68 @@
+name: lazy-core
+version: '1.0-SNAPSHOT'
+main: org.lazycore.lazycore.Lazy_core
+api-version: 1.19
+commands:
+  gms:
+    aliases: [survival]
+    permission: lazycore.gms
+    permission-message: You don't have the required permission to use this command.
+    description: Change player's gamemode to survival
+    usage: gms
+  gmc:
+    aliases: [creative]
+    permission: lazycore.gmc
+    permission-message: You don't have the required permission to use this command.
+    description: Change player's gamemode to creative
+    usage: gmc
+  gmsp:
+    aliases: [spectator]
+    permission: lazycore.gmsp
+    permission-message: You don't have the required permission to use this command.
+    description: Change player's gamemode to spectator
+    usage: gmsp
+  gma:
+    aliases: [adventure]
+    permission: lazycore.gma
+    permission-message: You don't have the required permission to use this command.
+    description: Change player's gamemode to adventure
+    usage: gma
+  heal:
+    permission: lazycore.heal
+    permission-message: You don't have the required permission to use this command.
+    description: Heal up player's health
+    usage: heal
+  ping:
+    description: Check your ping
+    permission: lazycore.ping
+    permission-message: You don't have the required permission to use this command.
+    usage: ping
+    aliases: [ms, latency, network]
+  vanish:
+    description: Hide yourself from non-op players
+    permission: lazycore.vanish
+    permission-message: You don't have the required permission to use this command
+    usage: vanish
+  fly:
+    description: Toggle fly
+    permission: lazycore.fly
+    permission-message: You don't have the required permission to use this command
+    usage: fly
+    aliases: [togglefly]
+  god:
+    description: Toggle invulnerability
+    permission: lazycore.godmode
+    permission-message: You don't have the required permission to use this command
+    usage: god
+    aliases: [godmode, invulnerability, invulnerable]
+  sellxp:
+    description: Sell your xp to get some money
+    permission: lazycore.sellxp
+    permission-message: You don't have the required permission to use this command
+    usage: sellxp
+  reload:
+    description: Reload the config file
+    permission: lazycore.reload
+    permission-message: You don't have the required permission to use this command
+    usage: reload
+    aliases: [reloadconfig]

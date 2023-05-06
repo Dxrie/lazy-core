@@ -1,0 +1,15 @@
+org\lazycore\lazycore\commands\GMS.class
+org\lazycore\lazycore\commands\Ping.class
+org\lazycore\lazycore\commands\GMA.class
+org\lazycore\lazycore\commands\Heal.class
+org\lazycore\lazycore\events\PlayerJoinEvent.class
+org\lazycore\lazycore\Lazy_core.class
+org\lazycore\lazycore\commands\Vanish.class
+org\lazycore\lazycore\commands\Fly.class
+org\lazycore\lazycore\events\PlayerQuitEvent.class
+org\lazycore\lazycore\commands\Reload.class
+org\lazycore\lazycore\commands\GMSP.class
+org\lazycore\lazycore\FileConfigurator.class
+org\lazycore\lazycore\commands\GodMode.class
+org\lazycore\lazycore\commands\GMC.class
+org\lazycore\lazycore\commands\SellXP.class
