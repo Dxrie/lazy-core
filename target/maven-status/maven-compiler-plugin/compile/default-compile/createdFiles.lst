@@ -3,6 +3,7 @@ org\lazycore\lazycore\commands\Ping.class
 org\lazycore\lazycore\commands\GMA.class
 org\lazycore\lazycore\commands\Heal.class
 org\lazycore\lazycore\events\PlayerJoinEvent.class
+org\lazycore\lazycore\commands\XP.class
 org\lazycore\lazycore\Lazy_core.class
 org\lazycore\lazycore\commands\Vanish.class
 org\lazycore\lazycore\commands\Fly.class

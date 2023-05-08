@@ -20,9 +20,13 @@ public class SellXP implements CommandExecutor {
 
             if (args.length == 1) {
                 Integer sellXP = Integer.parseInt(args[0]);
+                int currentXP = player.getTotalExperience();
 
                 if (sellXP <= player.getTotalExperience()) {
-                    player.setExp(player.getTotalExperience() - sellXP);
+                    player.setTotalExperience(0);
+                    player.setLevel(0);
+                    player.setExp(0);
+                    player.giveExp(currentXP - sellXP, false);
                     economy.depositPlayer(player, sellXP * Lazy_core.plugin.getConfig().getInt("xpPrice"));
                     player.sendMessage(ChatColor.YELLOW + "[ Lazy Core ] Successfully sold " + ChatColor.RED + sellXP + ChatColor.YELLOW + " XP(s) for " + ChatColor.RED + sellXP * Lazy_core.plugin.getConfig().getInt("xpPrice") + ChatColor.YELLOW + " in total.");
                 }

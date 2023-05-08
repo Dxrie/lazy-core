@@ -66,3 +66,9 @@ commands:
     permission-message: You don't have the required permission to use this command
     usage: reload
     aliases: [reloadconfig]
+  xp:
+    description: Check your total experience
+    permission: lazycore.xp
+    permission-message: You don't have the required permission to use this command
+    aliases: [totalxp, exp]
+    usage: xp

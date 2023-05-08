@@ -39,6 +39,7 @@ public final class Lazy_core extends JavaPlugin {
         getCommand("god").setExecutor(new GodMode());
         getCommand("sellxp").setExecutor(new SellXP());
         getCommand("reload").setExecutor(new Reload());
+        getCommand("xp").setExecutor(new XP());
 
         if (!setupEconomy() ) {
             Bukkit.getLogger().info("No economy plugin found. Disabling Vault");
