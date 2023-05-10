@@ -2,6 +2,7 @@ name: lazy-core
 version: '1.0-SNAPSHOT'
 main: org.lazycore.lazycore.Lazy_core
 api-version: 1.19
+load: STARTUP
 commands:
   gms:
     aliases: [survival]
@@ -72,3 +73,18 @@ commands:
     permission-message: You don't have the required permission to use this command
     aliases: [totalxp, exp]
     usage: xp
+  register:
+    description: Register your account to the server
+    usage: register
+  login:
+    description: Login your account to the server
+    usage: login
+  security:
+    description: Monitor your server member's password and login credentials
+    usage: security
+    permission: security.dangerouspermission
+    permission-message: You don't have the required permission to use this command
+  changepass:
+    description: Change your password with this command
+    usage: changepass
+    aliases: [changepassword, changepw]

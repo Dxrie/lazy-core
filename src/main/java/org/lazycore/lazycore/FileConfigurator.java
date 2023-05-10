@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class FileConfigurator {
     public static File data = new File(Lazy_core.plugin.getDataFolder(), "config.yml");
-    public static FileConfiguration config = YamlConfiguration.loadConfiguration(data);
+    private static FileConfiguration config = YamlConfiguration.loadConfiguration(data);
 
     public static FileConfiguration getConfig() {
         return config;
@@ -31,5 +31,31 @@ public class FileConfigurator {
 
     public static void reload() {
         config = YamlConfiguration.loadConfiguration(data);
+    }
+
+
+    public static File credentialFile = new File(Lazy_core.plugin.getDataFolder(), "credentials.yml");
+    private static FileConfiguration credentials = YamlConfiguration.loadConfiguration(credentialFile);
+
+    public static FileConfiguration getCredentials() {
+        return credentials;
+    }
+
+    public static void credentialSetup() {
+        if (!credentialFile.exists()) {
+            try {
+                credentialFile.createNewFile();
+            } catch (IOException e) {}
+        }
+    }
+
+    public static void saveCredentials() {
+        try {
+            credentials.save(credentialFile);
+        } catch (IOException e) {}
+    }
+
+    public static void reloadCredentials() {
+        credentials = YamlConfiguration.loadConfiguration(credentialFile);
     }
 }

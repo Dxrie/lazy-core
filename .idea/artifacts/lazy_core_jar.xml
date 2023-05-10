@@ -4,6 +4,8 @@
     <root id="archive" name="lazy-core.jar">
       <element id="module-output" name="lazy-core" />
       <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/credentials.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
     </root>
   </artifact>
 </component>

@@ -16,6 +16,7 @@ public class Heal implements CommandExecutor {
 
             if (args.length == 0) {
                 player.setHealth(player.getHealthScale());
+                player.setFoodLevel(20);
 
                 for (PotionEffect effect : player.getActivePotionEffects()) {
                     player.removePotionEffect(effect.getType());
@@ -26,6 +27,7 @@ public class Heal implements CommandExecutor {
 
                     if (trialPlayer instanceof Player) {
                         trialPlayer.setHealth(trialPlayer.getHealthScale());
+                        trialPlayer.setFoodLevel(20);
 
                         for (PotionEffect effect : trialPlayer.getActivePotionEffects()) {
                             trialPlayer.removePotionEffect(effect.getType());
@@ -40,6 +42,7 @@ public class Heal implements CommandExecutor {
 
                     if (trialPlayer instanceof Player) {
                         trialPlayer.setHealth(trialPlayer.getHealthScale());
+                        trialPlayer.setFoodLevel(20);
 
                         for (PotionEffect effect : trialPlayer.getActivePotionEffects()) {
                             trialPlayer.removePotionEffect(effect.getType());
